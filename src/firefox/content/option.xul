@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" windowtype="cwzoption" title="设置">
+	<prefpane>
+		<preferences>
+			<preference id="quickClose" name="extensions.cwz.quickClose" instantApply="true" type="bool" />
+			<preference id="silentPost" name="extensions.cwz.silentPost" instantApply="true" type="bool" />
+		</preferences>
+		<groupbox>
+			<checkbox preference="quickClose" label="立即关闭窗口(不等待3秒)"/>
+			<checkbox preference="silentPost" label="静默方式(不弹窗)"/>
+		</groupbox>
+	</prefpane>
+</prefwindow>

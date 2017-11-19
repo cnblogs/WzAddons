@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://httpresponsereplace/locale/browserOverlay.xul.dtd">
+<overlay id="cwz-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="overlay.js"/>
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="cwz-toolbar-button" label="添加到博客园网摘" tooltiptext="添加到博客园网摘" style="list-style-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdElEQVQ4jaXQv0sbYRzH8eevslsnt25OmdwCGRIK18FCW1sDpgWFkJQTLgGlNqAHiiFDQkvgjkakQ6kctqUgiAUdguIiWGue7/ft8NQ72tEbXjwfvj8eHh4T9ImDAdxLn9g0e0oeZnlbycMsbip5mPqOEiXKy/fK2scs34mSrP6/16FiXnUEgFZfaHRdbnSFp6tCq5/1hvua2v2uAAz3FeMFwuk5fDpQvED4/Qe6ey5/+KJcXIIXSOrZmpsH2IgUU/aFKFFOzqDsC8mRkhwpZV84PIUocbnsC/PrwsmZW/7809VNsS74PfekxyvC8Ktyde0ygN9TinWh2hGurt1yGLtasS6Y2SVLqWkBaA+yodE3d2mpafFaNq23B8Lskk2ZQs1SqFl+/HILAMdjTc9CzVL9+9HHY2VrlKl2BDOzYJlZsJQaljBW3oSS5ieBcNd/2xXCWP/x4p1gHj235GGm5ybkYR56E/IwU5Wb+EFlwn1MVW7iWx7eK/HH9A98AAAAAElFTkSuQmCC')" onclick='cwz.showWindow(event)'></toolbarbutton>
+	</toolbarpalette>
+	<statusbar id="status-bar">
+		<statusbarpanel id="cwz-status">
+			<image id="cwz-statusbar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABdElEQVQ4jaXQv0sbYRzH8eevslsnt25OmdwCGRIK18FCW1sDpgWFkJQTLgGlNqAHiiFDQkvgjkakQ6kctqUgiAUdguIiWGue7/ft8NQ72tEbXjwfvj8eHh4T9ImDAdxLn9g0e0oeZnlbycMsbip5mPqOEiXKy/fK2scs34mSrP6/16FiXnUEgFZfaHRdbnSFp6tCq5/1hvua2v2uAAz3FeMFwuk5fDpQvED4/Qe6ey5/+KJcXIIXSOrZmpsH2IgUU/aFKFFOzqDsC8mRkhwpZV84PIUocbnsC/PrwsmZW/7809VNsS74PfekxyvC8Ktyde0ygN9TinWh2hGurt1yGLtasS6Y2SVLqWkBaA+yodE3d2mpafFaNq23B8Lskk2ZQs1SqFl+/HILAMdjTc9CzVL9+9HHY2VrlKl2BDOzYJlZsJQaljBW3oSS5ieBcNd/2xXCWP/x4p1gHj235GGm5ybkYR56E/IwU5Wb+EFlwn1MVW7iWx7eK/HH9A98AAAAAElFTkSuQmCC" style="width:16px; height:16px;"  tooltiptext="添加到博客园网摘" onclick='cwz.showWindow(event)'/>
+		</statusbarpanel>
+	</statusbar>
+	<popup id="contentAreaContextMenu">
+		<menuitem id="cwz-context" label="添加到博客园网摘"  insertafter="context-stop" onclick='cwz.showWindow(event)'/>
+	</popup>
+</overlay>

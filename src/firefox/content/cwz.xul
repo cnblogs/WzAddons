@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window onload="onLoad()" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" width="400" height="345" title="博客园网摘" windowtype="cwz">
+  <script src="cwz.js"></script>
+  <vbox style="padding-left:15px;padding-top:5px;">
+      <hbox height="48" style="border-bottom:1px solid #CCCCCC;padding-bottom:3px;margin-bottom:5px;">
+            <image height="45" src="logo_small.gif"/>
+            <spacer flex="1"/>
+            <vbox height="45">
+                <spacer flex="1"/>
+                <label class="text-link" href="http://wz.cnblogs.com/" value="我的网摘"/>
+            </vbox>
+            <spacer flex="0"/>
+            <hr/>
+      </hbox>
+	    <vbox id="panel_add">
+            <hbox height="28" style="padding-top:3px;">
+                 <label control="tb_url" value="网址："/>
+                 <textbox id="tb_url" width="300" multiline="false" cols="100"/>
+            </hbox>
+            <hbox height="28" style="padding-top:3px;">
+                 <label control="tb_title" value="标题："/>
+                 <textbox id="tb_title" width="300" multiline="false" cols="100"/>
+            </hbox>
+            <hbox height="28" style="padding-top:3px;">
+              <label control="tb_tags" value="标签："/>
+              <textbox id="tb_tags" multiline="false" width="200" cols="70"/>
+              <a style="cursor:pointer;text-decoration:underline;" id="select_block" onclick="showTag()">选择标签</a>
+              <label style="color:Green" value="(逗号隔开)"/>
+            </hbox>
+            <hbox>
+              <stack id="tagselect" style="display:none;width:200px">
+                <vbox style="border: 2px solid #97ACD2;margin:10px;">
+                  <hbox style="border-bottom:1px solid #CCC;padding:5px;padding-bottom:2px;">
+                    <hbox style="color:#999">选择tag</hbox>
+                    <hbox onclick="closeTag()" style="margin-left:258px;cursor:pointer;">关闭</hbox>
+                  </hbox>
+                  <vbox style="height:100px;overflow:auto">
+                    <description id="editMenu" align="start" left="0" right="0">
+                      <html:div id="tags_box"></html:div>
+                    </description >
+                  </vbox>
+                </vbox>
+              </stack>
+            </hbox>
+            <hbox height="105" style="padding-top:3px;">
+                 <label control="ta_summary" value="摘要："/>
+                 <vbox>
+                 <textbox id="ta_summary" multiline="true" rows="4" cols="44"/>
+                 <label style="color:Green" value="(不超过200字)"/>
+                 </vbox>
+            </hbox>
+            <hbox height="20">
+                 <spacer style="width:44px" flex="0"/>
+                 <checkbox id="isPrivate" label="私有网摘" checked="false"/>
+            </hbox>
+            <hbox>
+                 <spacer style="width:44px" flex="0"/>
+                 <button oncommand="addwz()" id="btnaddwz" style="width:45px;min-width:1em;height:20px;" label="收藏"/>
+            </hbox>
+	    </vbox>
+	  <vbox>
+		  <label id="as" style="padding:10px;color:Red" value=""/>
+		  <label id="loginl" style="padding-left:10px;display:none;color:Red" class="text-link" href="http://passport.cnblogs.com/login.aspx" value="点此进行登录"/>
+      <label id="closet" style="padding-left:10px;display:none;color:Green;" value="3秒后本窗口将自动关闭。"/>
+      <label id="loginText" style="display:none;" value="请先登录"/>
+	  </vbox>
+  </vbox>
+  <div id="tag_box"></div>
+</window>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>contact@cnblogs.com</em:id>
+		<em:version>1.4</em:version>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>9.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		<em:name>CnblogsWz(博客园网摘)</em:name>
+		<em:description>This is a Cnblogs Wz plug-in, you can bookmark article to Cnblogs Wz(这是一个博客园网摘插件,可以收藏文章到博客园网摘)</em:description>
+		<em:optionsURL>chrome://cwz/content/option.xul</em:optionsURL>
+		<em:creator>博客园</em:creator>
+	</Description>
+</RDF>
